@@ -63,7 +63,7 @@ function collectAndSortImports(outputChannel: vscode.OutputChannel) {
 			editBuilder.replace(importRange, formattedImports);
 		}).then(success => {
 			if (success) {
-				vscode.window.showInformationMessage("Imports collected and sorted successfully!");
+				
 				outputChannel.appendLine("Collection and sorting completed");
 			} else {
 				throw new Error("Failed to apply edit");
