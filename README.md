@@ -12,7 +12,37 @@ ImportLadder offers the following key features:
 - **On-Save Formatting**: Automatically sorts and organizes imports when you save a file (optional).
 - **Manual Trigger**: Provides a command to manually sort imports in the current file or selected text.
 
-![ImportLadder in action](images/importladder-demo.gif)
+# Example 
+
+Before:
+```javascript
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import './styles.css';
+import { API_URL, DEFAULT_TIMEOUT } from './constants';
+import React from 'react';
+import moment from 'moment';
+import { formatDate } from '../utils/dateUtils';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import as actionCreators from './actions';
+import logger from './logger';
+```
+
+After:
+```javascript
+import './styles.css';
+import axios from 'axios';
+import React from 'react';
+import moment from 'moment';
+import logger from './logger';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import as actionCreators from './actions';
+import { useState, useEffect } from 'react';
+import { formatDate } from '../utils/dateUtils';
+import { API_URL, DEFAULT_TIMEOUT } from './constants';
+```
 
 ## Installation
 

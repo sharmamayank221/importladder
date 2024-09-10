@@ -1,9 +1,9 @@
 {
   "name": "importladder",
   "displayName": "importladder",
-  "description": "arrange js import statements ascending or descinding",
+  "description": "arrange js import statements ascending",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.93.0"
   },
